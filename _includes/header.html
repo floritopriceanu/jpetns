@@ -1,0 +1,41 @@
+<nav class="navbar navbar-custom" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="logo-wrapper">
+        <img class="pull-left" src="{{ "/images/logo.png" | prepend: site.github.url }}" alt="">
+        <h2 class="pull-left"><a href="{{ "/" | prepend: site.github.url }}">Pelletstown <br> Educate Together <br>National School</a></h2>
+      </div>
+    </div>  
+
+    <div class="collapse navbar-collapse nav-wrapper" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right menu">
+        <li><a href="{{ "/" | prepend: site.github.url }}">Home</a></li>
+        <li><a href="#">About Us <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="{{ "/info" | prepend: site.github.url }}">General Information</a></li>
+            <li><a href="{{ "/policies" | prepend: site.github.url }}">Policies</a></li>
+            <li><a href="#">Classes <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Junior Infants <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="{{ "/caitriona" | prepend: site.github.url }}">Caitríona's Class</a></li>
+                    <li><a href="{{ "/siobhan" | prepend: site.github.url }}">Siobhán's Class</a></li>
+                  </ul>
+                </li>
+                <li><a href="{{ "#" | prepend: site.github.url }}">Senior Infants</a></li>
+              </ul>
+            </li>
+            <li><a href="{{ "/calendar" | prepend: site.github.url }}">Calendar</a></li>
+          </ul>
+        </li>
+        <li><a href="{{ "/enrolment" | prepend: site.github.url }}">Enrolment</a></li>
+        <li><a href="{{ "/gallery" | prepend: site.github.url }}">Gallery</a></li>
+        <li><a href="{{ "/blog" | prepend: site.github.url }}">Blog</a></li>
+        <li><a href="{{ "/contact" | prepend: site.github.url }}">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
